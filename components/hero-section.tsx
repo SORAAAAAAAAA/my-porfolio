@@ -34,7 +34,7 @@ export function HeroSection() {
           {/* Action Buttons */}
           <div className="flex flex-col items-center sm:items-start gap-2">
             <div className="flex items-center gap-4">
-              <p>Full-Stack Developer | Tech Enthusiast</p>
+              <p>Full-Stack Developer | AI Engineer</p>
             </div>
             <div className="flex sm:flex-row sm:justify-between flex-col items-center sm:gap-4 gap-2 w-full">
               <Button asChild size="sm" className="bg-gray-800 hover:bg-gray-700 text-white border border-gray-600">

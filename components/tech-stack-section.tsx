@@ -4,8 +4,9 @@ import { Button } from "@/components/ui/button"
 
 export function TechStackSection() {
   const techStack = {
-    frontend: ["JavaScript", "TypeScript", "React", "Next.js", "Vue.js", "Tailwind CSS"],
-    backend: ["Python", "PostgreSQL", "Neon DB", "Node.js"],
+    frontend: ["JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS, HTML5, CSS3, Bootstrap"],
+    backend: ["Python", "PostgreSQL", "Neon DB", "Node.js, Express.js, JavaScript, Supabase, Prisma, Docker"],
+    
   
   }
 

@@ -13,6 +13,11 @@ export function ProjectsCertifications() {
       description: "Minting dApp for NFTs (Aptos)",
       url: "nft-minting-app-orpin.vercel.app"
 
+    },
+    {
+      title: "Gen AI Voice Assistant",
+      description: "A generative AI voice assistant web application",
+      url: "https://gen-ai-voice-assistant.vercel.app/"
     }
     
   ]
