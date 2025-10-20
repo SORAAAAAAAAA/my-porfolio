@@ -17,7 +17,7 @@ export function ProjectsCertifications() {
     {
       title: "Gen AI Voice Assistant",
       description: "A generative AI voice assistant web application",
-      url: "https://gen-ai-voice-assistant.vercel.app/"
+      url: "gen-ai-voice-assistant.vercel.app"
     }
     
   ]
