@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button"
 
 export function TechStackBeyondCoding() {
   const techStack = {
-    languages: ["TypeScript", "JavaScript", "Python", "HTML5", "CSS3"],
-    frontend: ["React", "Next.js", "Tailwind CSS", "Bootstrap"],
+    languages: ["TypeScript", "JavaScript", "Python"],
+    frontend: ["React", "Next.js", "Tailwind CSS", "Bootstrap", "HTML5", "CSS3"],
     backend: ["Node.js", "Express.js"],
     databasesAndORMs: ["PostgreSQL", "Neon DB", "Supabase", "Prisma", "Redis"],
     
