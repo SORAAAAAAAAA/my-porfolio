@@ -4,8 +4,10 @@ import { Button } from "@/components/ui/button"
 
 export function TechStackBeyondCoding() {
   const techStack = {
-    frontend: ["JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS, HTML5, CSS3, Bootstrap"],
-    backend: ["Python", "PostgreSQL", "Neon DB", "Node.js, Express.js, JavaScript, Supabase, Prisma, Docker, Redis"],
+    languages: ["TypeScript", "JavaScript", "Python", "HTML5", "CSS3"],
+    frontend: ["React", "Next.js", "Tailwind CSS", "Bootstrap"],
+    backend: ["Node.js", "Express.js"],
+    databasesAndORMs: ["PostgreSQL", "Neon DB", "Supabase", "Prisma", "Redis"],
     
   }
 
@@ -20,6 +22,17 @@ export function TechStackBeyondCoding() {
           </Button>
         </CardHeader>
         <CardContent className="space-y-4">
+          <div>
+            <h3 className="text-foreground font-medium mb-2 text-sm">Languages</h3>
+            <div className="flex flex-wrap gap-2">
+              {techStack.languages.map((tech) => (
+                <Badge key={tech} variant="outline" className="bg-muted border-border text-muted-foreground text-xs">
+                  {tech}
+                </Badge>
+              ))}
+            </div>
+          </div>
+
           <div>
             <h3 className="text-foreground font-medium mb-2 text-sm">Frontend</h3>
             <div className="flex flex-wrap gap-2">
@@ -41,7 +54,17 @@ export function TechStackBeyondCoding() {
               ))}
             </div>
           </div>
-
+          
+          <div>
+            <h3 className="text-foreground font-medium mb-2 text-sm">Database And ORMS</h3>
+            <div className="flex flex-wrap gap-2">
+              {techStack.databasesAndORMs.map((tech) => (
+                <Badge key={tech} variant="outline" className="bg-muted border-border text-muted-foreground text-xs">
+                  {tech}
+                </Badge>
+              ))}
+            </div>
+          </div>
       
           
         </CardContent>
