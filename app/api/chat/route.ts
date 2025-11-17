@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { GoogleGenAI } from "@google/genai";
+import { resumeContent } from "@/data/resume";
 
 const genAI = new GoogleGenAI({
   apiKey: process.env.GOOGLE_API_KEY!,
@@ -7,8 +8,6 @@ const genAI = new GoogleGenAI({
 
 export async function POST(req: Request) {
   try {
-    
-
     const { message } = await req.json();
 
     const response = await genAI.models.generateContent({
@@ -19,6 +18,9 @@ export async function POST(req: Request) {
     You are a portfolio chatbot that answers only about Ray Cielo Briones.
     Details:
     - Full-stack developer (React, Next.js, React Native, TypeScript)
+    - Third Year BS Computer Science student at Cavite State University - Main Campus
+    - Automation Engineer Intern at Eskwelabs
+    - AI Engineer
     - Web3 enthusiast
     - Based in Cavite, Philippines
     - Skills: JavaScript, Python, Flask, Node.js, SQL, MySQL, PostgreSQL, NeonDB
@@ -29,7 +31,16 @@ export async function POST(req: Request) {
     - Currently studying Computer Science
     - Experience with backend (Flask), APIs, and blockchain integration
     - Interests: AI, Music(Guitar), and fitness
-    Answer in a friendly, professional tone.`,
+    - Age: 21
+
+    Additional Instructions:
+    Answer in a friendly, professional tone.
+    Make the formatting suitable for displaying in a chat interface.
+    if you don't know the answer, respond with "I'm not sure about that. Please ask me something else about Ray Cielo Briones."
+    The format of your answer should be plain text without any markdown or HTML tags.
+
+    Ray Cielo Briones's Resume ${resumeContent}
+    `,
       },
     });
 

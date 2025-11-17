@@ -11,7 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import Chatbot from "@/components/chatbot"
-import { FaRocketchat } from "react-icons/fa";
+import { MessageCircle, X } from "lucide-react";
 
 
 
@@ -19,31 +19,59 @@ export default function Home() {
   const [showChat, setShowChat] = useState(false);
 
   useEffect(() => {
-    AOS.init({ once: true });
+    AOS.init({ once: true, duration: 800, easing: "ease-in-out-cubic" });
   }, []);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
-      <main className="container mx-auto px-4 py-8 max-w-4xl min-h-screen" data-aos="zoom-in">
-        <HeroSection />
-        <AboutExperienceGrid />
-        <TechStackBeyondCoding />
-        <ProjectsCertifications />
-        <RecommendationsSection />
-        <ContactSection />
+      <main className="container mx-auto px-4 py-12 sm:py-16 max-w-4xl" data-aos="fade-in">
+        <section className="space-y-12 sm:space-y-16">
+          <HeroSection />
+          <hr className="border-border/40" />
+          <AboutExperienceGrid />
+          <hr className="border-border/40" />
+          <TechStackBeyondCoding />
+          <hr className="border-border/40" />
+          <ProjectsCertifications />
+          <hr className="border-border/40" />
+          <RecommendationsSection />
+          <hr className="border-border/40" />
+          <ContactSection />
+        </section>
       </main>
+
+      {/* Chat Button */}
       <button
-        className="flex items-center gap-2 fixed bottom-8 right-8 z-50 bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition"
         onClick={() => setShowChat((prev) => !prev)}
+        className="group fixed bottom-8 right-8 z-40 flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-5 py-3 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95 border border-blue-500/50 backdrop-blur-sm"
+        aria-label={showChat ? "Close chat" : "Open chat"}
       >
-        {showChat ? <><FaRocketchat /> Close Chat</> : <><FaRocketchat /> Chat with Cielo</>}
+        <div className="flex items-center gap-2">
+          {showChat ? (
+            <>
+              <X size={18} />
+              <span className="text-sm font-semibold">Close</span>
+            </>
+          ) : (
+            <>
+              <MessageCircle size={18} />
+              <span className="text-sm font-semibold">Chat</span>
+            </>
+          )}
+        </div>
+        {!showChat && (
+          <div className="absolute inset-0 rounded-full bg-blue-400/20 animate-pulse -z-10"></div>
+        )}
       </button>
+
+      {/* Chat Window */}
       {showChat && (
-        <div className="fixed bottom-24 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-auto sm:right-8 z-50">
+        <div className="fixed bottom-24 right-8 z-50 sm:bottom-auto sm:top-1/2 sm:-translate-y-1/2 animate-in fade-in slide-in-from-bottom-4 duration-300">
           <Chatbot onClose={() => setShowChat(false)} />
         </div>
       )}
+
       <Footer />
     </div>
   )
