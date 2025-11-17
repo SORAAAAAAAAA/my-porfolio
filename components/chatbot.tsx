@@ -4,7 +4,6 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Send, X, MessageCircle } from "lucide-react";
-import { aiSystemInstruction } from "@/data/resume";
 
 type Message = { role: "user" | "assistant"; content: string };
 
@@ -40,10 +39,7 @@ export default function Chatbot({ onClose }: { onClose: () => void }) {
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ 
-          message: input,
-          systemInstruction: aiSystemInstruction 
-        }),
+        body: JSON.stringify({ message: input }),
       });
 
       const data = await res.json();
