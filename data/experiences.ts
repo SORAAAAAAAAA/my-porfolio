@@ -14,16 +14,16 @@ export const experiences: Experience[] = [
     current: true,
   },
   {
-    title: "Bachelor of Science in Computer Science",
-    company: "Cavite State University - Main Campus",
-    period: "Sept 2023 - Jun 2027",
-    current: true,
-  },
-  {
     title: "Full-Stack Developer",
     company: "GrabEat (OOP Course Project)",
     period: "Jan 2025",
     current: false,
+  },
+  {
+    title: "Bachelor of Science in Computer Science",
+    company: "Cavite State University - Main Campus",
+    period: "Sept 2023 - Jun 2027",
+    current: true,
   },
   {
     title: "Embedded System Programmer",
