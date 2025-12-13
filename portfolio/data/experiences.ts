@@ -10,8 +10,8 @@ export const experiences: Experience[] = [
   {
     title: "Automation Engineer Intern",
     company: "Eskwelabs",
-    period: "Oct 2025 - Present",
-    current: true,
+    period: "Oct 2025 - December 2025",
+    current: false,
   },
   {
     title: "Full-Stack Developer",
