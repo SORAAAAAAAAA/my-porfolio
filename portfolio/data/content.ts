@@ -2,9 +2,9 @@
 export const aboutContent = {
   title: "📋 About",
   paragraphs: [
-    "Hi! I'm Ray Cielo Briones, a passionate Full-Stack Developer and AI Engineer with hands-on experience building scalable web applications, AI-powered systems, and blockchain solutions. I'm currently working as an Automation Engineer Intern at Eskwelabs while pursuing my Bachelor's degree in Computer Science at Cavite State University.",
-    "My expertise spans across modern full-stack technologies including React, Next.js, Node.js, and TypeScript for web development, alongside Python and C++ for backend systems and automation. I'm particularly interested in AI integration, Web3/blockchain development, and building intelligent automation workflows.",
-    "As a Dean's Lister, I've demonstrated strong academic performance while actively contributing to real-world projects, hackathons, and internships. I'm driven by solving complex problems and creating innovative solutions that make a tangible impact.",
+    "Hi! I'm Ray Cielo Briones, a passionate Full-Stack Developer and AI Engineer dedicated to building scalable web applications and intelligent systems. I am currently working as a Full-Stack Developer Intern at Codebility and an active Software Engineer Freelancer on Upwork, all while pursuing my Bachelor's degree in Computer Science at Cavite State University.",
+    "In my freelance practice, I collaborate with international clients to solve complex architectural challenges. Most recently, I re-engineered an AI Advertisement Video Generator, where I successfully optimized the transition from mobile to web and increased video generation limits from 8 seconds to 1 minute. By redesigning the system architecture and introducing tiered draft validation, I significantly reduced data processing time and API token usage, ultimately cutting costs and preserving resources for both the client and end-users.",
+    "My technical expertise spans modern full-stack technologies including React, Next.js, Node.js, and TypeScript, alongside Python and C++ for backend systems. As a Dean's Lister, I combine strong academic foundations with a drive to solve real-world problems through internships, hackathons, and high-impact client projects, with a particular focus on AI integration and Web3 development."
   ]
 }
 

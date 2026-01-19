@@ -2,6 +2,12 @@ import { Experience } from './types'
 
 export const experiences: Experience[] = [
   {
+    title: "Software Engineer Freelancer",
+    company: "Upwork",
+    period: "Dec 2025 - Present",
+    current: true,
+  },
+  {
     title: "Full-Stack Developer Intern",
     company: "Codebility",
     period: "Nov 2025 - Present",
@@ -16,8 +22,8 @@ export const experiences: Experience[] = [
   {
     title: "Full-Stack Developer",
     company: "GabAI (Software Engineering Course Project)",
-    period: "Oct 2025 - Present",
-    current: true,
+    period: "Oct 2025 - Dec 2025",
+    current: false,
   },
   {
     title: "Full-Stack Developer",
