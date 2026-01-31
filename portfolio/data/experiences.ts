@@ -4,14 +4,14 @@ export const experiences: Experience[] = [
   {
     title: "Software Engineer Freelancer",
     company: "Upwork",
-    period: "Dec 2025 - Present",
-    current: true,
+    period: "Dec 2025 - Jan 2026",
+    current: false,
   },
   {
     title: "Full-Stack Developer Intern",
     company: "Codebility",
-    period: "Nov 2025 - Present",
-    current: true,
+    period: "Nov 2025 - Jan 2026",
+    current: false,
   },
   {
     title: "Automation Engineer Intern",
