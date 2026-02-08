@@ -14,7 +14,7 @@ export const projects: Project[] = [
   {
     title: "GabAI",
     description: "AI-powered application (Full-Stack development)",
-    url: "github.com/SORAAAAAAAAA/GabAI"
+    url: "gab-ai.vercel.app"
   },
   {
     title: "AI Voice Assistant",
